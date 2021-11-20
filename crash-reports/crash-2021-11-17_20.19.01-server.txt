@@ -1,0 +1,88 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 17.11.21 20:19
+Description: Exception in server tick loop
+
+com.google.gson.JsonIOException: java.io.IOException: Недостаточно места на диске
+	at com.google.gson.Gson.toJson(Gson.java:747) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.Gson.toJson(Gson.java:703) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at net.minecraft.advancements.PlayerAdvancements.func_192749_b(PlayerAdvancements.java:191) ~[?:?] {re:classloading}
+	at net.minecraft.server.management.PlayerList.func_72391_b(PlayerList.java:310) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.management.PlayerList.func_72389_g(PlayerList.java:636) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:806) ~[?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:good_nights_sleep.mixins.json:MinecraftServerMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:642) ~[?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:good_nights_sleep.mixins.json:MinecraftServerMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:232) ~[?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:good_nights_sleep.mixins.json:MinecraftServerMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311] {}
+Caused by: java.io.IOException: Недостаточно места на диске
+	at java.io.FileOutputStream.writeBytes(Native Method) ~[?:1.8.0_311] {}
+	at java.io.FileOutputStream.write(Unknown Source) ~[?:1.8.0_311] {}
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source) ~[?:1.8.0_311] {}
+	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source) ~[?:1.8.0_311] {}
+	at sun.nio.cs.StreamEncoder.write(Unknown Source) ~[?:1.8.0_311] {}
+	at sun.nio.cs.StreamEncoder.write(Unknown Source) ~[?:1.8.0_311] {}
+	at java.io.OutputStreamWriter.write(Unknown Source) ~[?:1.8.0_311] {}
+	at java.io.Writer.write(Unknown Source) ~[?:1.8.0_311] {}
+	at com.google.gson.stream.JsonWriter.value(JsonWriter.java:467) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:760) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:776) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:776) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:714) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.internal.Streams.write(Streams.java:72) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	at com.google.gson.Gson.toJson(Gson.java:745) ~[server-1.16.5-20210115.111550-extra.jar:?] {}
+	... 8 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_311, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 10504741464 bytes (10018 MB) / 14571536384 bytes (13896 MB) up to 14571536384 bytes (13896 MB)
+	CPUs: 24
+	JVM Flags: 2 total; -Xmx14G -Xms14G
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.0.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.0.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.0.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.0
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		forge-1.16.5-36.2.0-server.jar                    |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		YungsApi-1.16.4-Forge-4.jar                       |YUNG's API                    |yungsapi                      |1.16.4-Forge-4      |DONE      |Manifest: NOSIGNATURE
+		repurposed_structures-1.16.5-2.4.4.jar            |Repurposed Structures         |repurposed_structures         |1.16.5-2.4.4        |DONE      |Manifest: NOSIGNATURE
+		good-nights-sleep-1.16.4-1.2.11.jar               |Good Night's Sleep            |good_nights_sleep             |1.2.11              |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.16.5-13.1.0.477-universal.jar     |Biomes O' Plenty              |biomesoplenty                 |1.16.5-13.1.0.477   |DONE      |Manifest: NOSIGNATURE
+		jei-1.16.4-7.6.1.71.jar                           |Just Enough Items             |jei                           |7.6.1.71            |DONE      |Manifest: NOSIGNATURE
+		inventorypets-2.0.12.jar                          |Inventory Pets                |inventorypets                 |2.0.12              |DONE      |Manifest: NOSIGNATURE
+		goblintraders-1.6.0-1.16.3.jar                    |Goblin Traders                |goblintraders                 |1.6.0               |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.0-universal.jar                 |Forge                         |forge                         |36.2.0              |DONE      |Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		twilightforest-1.16.5-4.0.546-universal.jar       |The Twilight Forest           |twilightforest                |NONE                |DONE      |Manifest: NOSIGNATURE
+		BetterMineshafts-Forge-1.16.4-2.0.1.jar           |YUNG's Better Mineshafts      |bettermineshafts              |1.16.4-2.0.1        |DONE      |Manifest: NOSIGNATURE
+		BetterCaves-Forge-1.16.4-1.1.1.jar                |YUNG's Better Caves           |bettercaves                   |1.16.4-1.1.1        |DONE      |Manifest: NOSIGNATURE
+		gravestone-1.16.5-1.0.1.jar                       |Gravestone Mod                |gravestone                    |1.16.5-1.0.1        |DONE      |Manifest: NOSIGNATURE
+		ironchest-1.16.5-11.2.13.jar                      |Iron Chests                   |ironchest                     |1.16.5-11.2.13      |DONE      |Manifest: NOSIGNATURE
+		Cyclic-1.16.5-1.1.8.jar                           |Cyclic                        |cyclic                        |1.16.5-1.1.8        |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		TravelersBackpack-1.16.4-5.3.8.jar                |Traveler's Backpack           |travelersbackpack             |5.3.8               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 8acd79ac-87d6-4393-9a5e-cda0c0327763
+	Player Count: 1 / 20; [ServerPlayerEntity['pavel_persik'/5217, l='ServerLevel[world]', x=-555.12, y=64.00, z=-1812.71]]
+	Data Packs: vanilla, mod:yungsapi, mod:repurposed_structures, mod:good_nights_sleep (incompatible), mod:biomesoplenty, mod:jei, mod:inventorypets (incompatible), mod:goblintraders, mod:forge, mod:twilightforest, mod:bettermineshafts (incompatible), mod:bettercaves (incompatible), mod:gravestone, mod:ironchest, mod:cyclic (incompatible), mod:travelersbackpack (incompatible)
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

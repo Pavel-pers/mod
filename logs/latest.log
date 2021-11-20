@@ -1,0 +1,34 @@
+[20ноя2021 00:00:41.576] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: pavel_persik has completed the challenge [Return to Sender]
+[20ноя2021 00:03:11.125] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: pavel_persik has made the advancement [Ruined Nether History]
+[20ноя2021 00:05:39.135] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: pavel_persik has made the advancement [The Pyramid that Bridges Worlds]
+[20ноя2021 00:05:48.543] [Server thread/WARN] [net.minecraft.world.TrackedEntity/]: Fetching packet for removed entity ItemEntity['Cracked Polished Blackstone Bricks'/57410, l='ServerLevel[world]', x=1299.56, y=41.41, z=804.47]
+[20ноя2021 00:09:06.220] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [pavel_persik: Teleported pavel_persik to -51.5, 73.0, -247.5]
+[20ноя2021 00:12:47.443] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: pavel_persik has made the advancement [Rainbows and Unicorns!]
+[20ноя2021 00:14:05.226] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: pavel_persik has made the advancement [Prismatic!]
+[20ноя2021 00:14:34.787] [Server thread/WARN] [net.minecraft.network.play.ServerPlayNetHandler/]: pavel_persik moved too quickly! -1.4578982959673112,-9.495200877005928,-3.554227185264722
+[20ноя2021 00:15:00.172] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: pavel_persik lost connection: Disconnected
+[20ноя2021 00:15:00.173] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: pavel_persik left the game
+[20ноя2021 00:15:08.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[20ноя2021 00:15:08.221] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[20ноя2021 00:15:08.221] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[20ноя2021 00:15:08.221] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20ноя2021 00:15:08.266] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20ноя2021 00:15:08.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[20ноя2021 00:15:08.286] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20ноя2021 00:15:08.286] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[20ноя2021 00:15:08.287] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20ноя2021 00:15:08.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/good_nights_sleep:good_dream
+[20ноя2021 00:15:08.299] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (good_dream): All chunks are saved
+[20ноя2021 00:15:08.299] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/twilightforest:twilightforest
+[20ноя2021 00:15:08.313] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (twilightforest): All chunks are saved
+[20ноя2021 00:15:08.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/good_nights_sleep:nightmare
+[20ноя2021 00:15:08.314] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (nightmare): All chunks are saved
+[20ноя2021 00:15:08.314] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/twilightforest:skylight_forest
+[20ноя2021 00:15:08.315] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (skylight_forest): All chunks are saved
+[20ноя2021 00:15:08.333] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20ноя2021 00:15:08.348] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20ноя2021 00:15:08.392] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20ноя2021 00:15:08.393] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (good_dream): All chunks are saved
+[20ноя2021 00:15:08.409] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (twilightforest): All chunks are saved
+[20ноя2021 00:15:08.444] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (nightmare): All chunks are saved
+[20ноя2021 00:15:08.445] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (skylight_forest): All chunks are saved
